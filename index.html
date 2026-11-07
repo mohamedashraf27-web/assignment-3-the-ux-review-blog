@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The UX Review Blog</title>
+<meta property="og:title" content="The UX Review">
+<meta property="og:description" content="A blog about UX design and research.">
+<meta name="theme-color" content="#fdee85">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+<header class="nav">
+  <a href="#hero" class="logo">The UX <span>Review</span></a>
+  <nav class="links">
+    <a href="#hero">HOME</a><a href="#latestArticles">LATEST ARTICLES</a><a href="#authors">AUTHORS</a><a href="#community">COMMUNITY</a>
+  </nav>
+  <a href="#community" class="btn btn-sub desk">SUBSCRIBE NOW</a>
+  <button class="route" id="route" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="mobile" id="mobile-menu" aria-label="Mobile menu">
+  <div class="m-head"><strong>MENU</strong><button class="m-close" id="m-close" aria-label="Close menu">✕</button></div>
+  <a href="#hero">HOME</a><a href="#latestArticles">LATEST ARTICLES</a><a href="#authors">AUTHORS</a><a href="#community">COMMUNITY</a>
+  <a href="#community" class="btn m-sub"><svg class="i rk"><use href="#rocket"/></svg> SUBSCRIBE NOW</a>
+</nav>
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <span class="trend-tag">🔥 TRENDING NOW</span>
+    <h2><span>BRUTAL</span><span class="r">THOUGHTS</span><span class="b">BOLD IDEAS</span></h2>
+    <p>Raw, unfiltered content about tech, design, and culture. No sugar-coating, just pure truth that hits different.</p>
+    <div class="row">
+      <a href="#latestArticles" class="btn btn-black"><svg class="i rk"><use href="#rocket"/></svg> START READING</a>
+      <a href="#" class="btn btn-white">▶ WATCH INTRO</a>
+    </div>
+  </div>
+  <div class="hero-img-wrap">
+    <img class="hero-img" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e7c75b833c-f09fa794a4e1fbd04b1e.png" alt="abstract brutalist geometric shapes with bold colors, digital art style, high contrast">
+    <span class="badge">FEATURED</span>
+  </div>
+</section>
+</div>
+<svg style="display:none"><symbol id="user" viewBox="0 0 16 16"><circle cx="8" cy="5" r="3.2"/><path d="M2 15c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5z"/></symbol><symbol id="cal" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="1.5"/><rect x="4" y="1" width="2" height="3"/><rect x="10" y="1" width="2" height="3"/></symbol><symbol id="clock" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7"/><path d="M8 4v4.5l3 1.5" stroke="#fff" stroke-width="1.6" fill="none"/></symbol><symbol id="heart" viewBox="0 0 16 16"><path d="M8 14.5S1.5 10.5 1.5 6A3.5 3.5 0 0 1 8 4.3 3.5 3.5 0 0 1 14.5 6c0 4.5-6.5 8.5-6.5 8.5z"/></symbol><symbol id="tw" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></symbol><symbol id="in" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol><symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.5" cy="6.5" r="1.3"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="disc" viewBox="0 0 24 24"><path d="M20.317 4.37a19.79 19.79 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.74 19.74 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.1 13.1 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 01.078-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 01.079.009c.12.1.246.198.373.292a.077.077 0 01-.006.127 12.3 12.3 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.84 19.84 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></symbol><symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol><symbol id="pen2" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></symbol><symbol id="rocket" viewBox="0 0 24 24"><path d="M12 1.5c2.8 2.2 4.5 5.2 4.5 9 0 1.8-.4 3.3-1 4.5h-7c-.6-1.2-1-2.7-1-4.5 0-3.8 1.7-6.8 4.5-9zM7.5 15l-3 3.5v3l4-2zM16.5 15l3 3.5v3l-4-2zM10 17h4l-2 5z"/><circle cx="12" cy="9.5" r="1.8" fill="#000"/></symbol><symbol id="pen" viewBox="0 0 24 24"><path d="M12.3 7.7l4 4-1.6 6.2-8.9 2.4 2.4-8.9zM17.5 2.5l4 4-3.3 3.3-4-4z"/><circle cx="10.5" cy="14" r="1.3" fill="#fff"/></symbol></svg>
+<main class="wrap" id="latestArticles">
+  <div class="layout">
+    <div class="posts">
+      <div class="section-head"><h3>LATEST ARTICLES</h3><span class="fresh">🔥 FRESH CONTENT</span></div>
+      <article class="card">
+        <div class="thumb"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/user-engagement-2-DFdiyblT.jpg" alt="bold website design with sharp edges and contrasting colors"><span class="flag new">NEW</span></div>
+        <div class="body">
+          <span class="cat tech">TECH</span>
+          <h4>Why Your Website Needs More Edge</h4>
+          <p>Exploring the psychological impact of bold, unapologetic design choices on user engagement and brand perception in the digital age.</p>
+          <div class="meta"><span><svg class="i"><use href="#user"/></svg>BY ALEX BRUTAL</span><span><svg class="i"><use href="#cal"/></svg>JAN 8, 2025</span><span><svg class="i"><use href="#clock"/></svg>5 MIN READ</span><span class="likes"><svg class="i"><use href="#heart"/></svg>127</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/guide-to-typography-CNuK3VDW.avif" alt="bold typography design, experimental fonts, creative lettering"><span class="flag hot">HOT</span></div>
+        <div class="body">
+          <span class="cat design">DESIGN</span>
+          <h4>Typography That Screams</h4>
+          <p>How to choose and implement bold typography that commands attention without sacrificing readability or user experience.</p>
+          <div class="meta"><span><svg class="i"><use href="#user"/></svg>BY ARNOLD REEVE</span><span><svg class="i"><use href="#cal"/></svg>JAN 6, 2025</span><span><svg class="i"><use href="#clock"/></svg>7 MIN READ</span><span class="likes"><svg class="i"><use href="#heart"/></svg>89</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/anti-instagram-Bn9b8TEi.jpg" alt="anti-instagram aesthetic, raw authentic social media content"><span class="flag viral">VIRAL</span></div>
+        <div class="body">
+          <span class="cat culture">CULTURE</span>
+          <h4>The Anti-Instagram Movement</h4>
+          <p>Young creators are abandoning polished feeds for raw, authentic content that celebrates imperfection and real human connection.</p>
+          <div class="meta"><span><svg class="i"><use href="#user"/></svg>BY MIKE EDGE</span><span><svg class="i"><use href="#cal"/></svg>JAN 4, 2025</span><span><svg class="i"><use href="#clock"/></svg>4 MIN READ</span><span class="likes"><svg class="i"><use href="#heart"/></svg>203</span></div>
+        </div>
+      </article>
+      <button class="btn btn-black wide" type="button">+ LOAD MORE ARTICLES</button>
+    </div>
+    <aside>
+      <div class="box">
+        <h5>TRENDING NOW</h5>
+        <ol class="trend">
+          <li><b>01</b><div><h6>The Death of Minimalism</h6><small>12.5K reads · 🔥 Trending</small></div></li>
+          <li><b>02</b><div><h6>Chaos as a Design System</h6><small>8.2K reads · ⚡ Rising</small></div></li>
+          <li><b>03</b><div><h6>Digital Rebellion</h6><small>6.7K reads · 💥 Hot</small></div></li>
+        </ol>
+      </div>
+      <div class="box">
+        <h5>CATEGORIES</h5>
+        <div class="cats"><a href="#">TECH (24)</a><a href="#">DESIGN (18)</a><a href="#">CULTURE (15)</a><a href="#">OPINION (12)</a><a href="#">TUTORIALS (9)</a></div>
+      </div>
+    </aside>
+  </div>
+</main>
+<section class="authors" id="authors">
+  <div class="wrap">
+    <div class="center"><h3>MEET THE AUTHORS</h3><p>The rebels behind the brutal truth</p></div>
+    <div class="grid3">
+      <article class="author">
+        <span class="bdg f">FOUNDER</span>
+        <img loading="lazy" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Alex Brutal">
+        <h4>ALEX BRUTAL</h4><strong>Tech Critic &amp; Design Rebel</strong>
+        <p>Destroying conventional wisdom one article at a time. 10+ years fighting the good fight against boring design and corporate BS.</p>
+        <div class="social"><a href="https://twitter.com" aria-label="Twitter"><svg class="i"><use href="#tw"/></svg></a><a href="https://linkedin.com" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="https://instagram.com" aria-label="Instagram"><svg class="i"><use href="#ig"/></svg></a></div>
+      </article>
+      <article class="author">
+        <span class="bdg l">LEAD</span>
+        <img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/avatar-2-CwUcGkzI.jpg" alt="Arnold Reeve">
+        <h4>Arnold Reeve</h4><strong>UX Anarchist &amp; Visual Provocateur</strong>
+        <p>Challenging design norms and creating chaos that actually works. Former corporate designer turned rebel with a cause.</p>
+        <div class="social"><a href="https://twitter.com" aria-label="Twitter"><svg class="i"><use href="#tw"/></svg></a><a href="https://linkedin.com" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="https://instagram.com" aria-label="Instagram"><svg class="i"><use href="#ig"/></svg></a></div>
+      </article>
+      <article class="author">
+        <span class="bdg v">VIRAL</span>
+        <img loading="lazy" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Mike Edge">
+        <h4>MIKE EDGE</h4><strong>Cultural Critic &amp; Trend Destroyer</strong>
+        <p>Dissecting digital culture and exposing the truth behind viral trends. No filter, just facts that cut through the noise.</p>
+        <div class="social"><a href="https://twitter.com" aria-label="Twitter"><svg class="i"><use href="#tw"/></svg></a><a href="https://linkedin.com" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="https://instagram.com" aria-label="Instagram"><svg class="i"><use href="#ig"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="community" id="community">
+  <div class="wrap">
+    <div class="center"><h3>JOIN THE REBELLION</h3><p>Where rebels gather to change the digital world</p></div>
+    <div class="join">
+      <div>
+        <h4>BECOME PART OF SOMETHING BIGGER</h4>
+        <p>Join thousands of designers, developers, and digital rebels who are tired of the same old boring content. Our community is where raw ideas meet bold execution and real change happens.</p>
+        <ul class="perks">
+          <li><span class="pi c1"><svg class="i"><use href="#check"/></svg></span>Weekly brutal insights newsletter with exclusive content</li>
+          <li><span class="pi c2"><svg class="i"><use href="#disc"/></svg></span>Exclusive community Discord access for real-time discussions</li>
+          <li><span class="pi c3"><svg class="i"><use href="#star"/></svg></span>Early access to new articles before they go public</li>
+          <li><span class="pi c4"><svg class="i"><use href="#pen2"/></svg></span>Submit your own brutal takes and get featured</li>
+        </ul>
+        <a href="#" class="btn btn-black join-btn"><svg class="i rk"><use href="#rocket"/></svg> JOIN NOW - IT'S FREE</a>
+      </div>
+      <div class="box">
+        <h5>WHAT REBELS ARE SAYING</h5>
+        <blockquote>
+          <p>"Finally, a blog that tells it like it is. No corporate BS, just pure truth about what's really happening in tech. This is the wake-up call our industry needed."</p>
+          <div class="who"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/avatar-4-EAD2OaMD.avif" alt="User"><div><b>Mark T.</b><small>Senior Designer at Meta</small></div></div>
+        </blockquote>
+        <blockquote>
+          <p>"The UX Review changed how I think about design. It's raw, honest, and exactly what our industry needs. Every article challenges my assumptions."</p>
+          <div class="who"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/avatar-5-CDQD_dyw.jpg" alt="User"><div><b>ALEX M.</b><small>Lead Developer at Stripe</small></div></div>
+        </blockquote>
+        <blockquote>
+          <p>"The most authentic voice in digital culture. Every article challenges my assumptions and makes me think differently about the work I do."</p>
+          <div class="who"><img loading="lazy" src="https://the-ux-review-blog.vercel.app/assets/avatar-6-CMLrVfwj.avif" alt="User"><div><b>James K.</b><small>Creative Director at Adobe</small></div></div>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="flogo"><span class="sq"><svg class="i"><use href="#pen"/></svg></span><h1>THE UX REVIEW</h1></div>
+      <p>Raw, unfiltered thoughts on tech, design, and digital culture. No compromise, no corporate speak, just brutal truth that matters.</p>
+    </div>
+    <div>
+      <h5>CATEGORIES</h5>
+      <ul><li><a href="#">TECH</a></li><li><a href="#">DESIGN</a></li><li><a href="#">CULTURE</a></li><li><a href="#">OPINION</a></li><li><a href="#">TUTORIALS</a></li></ul>
+    </div>
+    <div>
+      <h5>NEWSLETTER</h5>
+      <p>Get brutal insights delivered weekly. No spam, just truth that cuts through the noise.</p>
+      <form class="sub"><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn-yel">SUBSCRIBE</button></form>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <span>© 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.</span>
+    <span><a href="#">PRIVACY POLICY</a><a href="#">TERMS OF USE</a><a href="#">COOKIE POLICY</a></span>
+  </div>
+</footer>
+<script>
+const b=document.getElementById("route"),m=document.getElementById('mobile-menu'),s=document.getElementById('scrim'),x=document.getElementById('m-close');
+const t=o=>{m.classList.toggle('open',o);s.classList.toggle('open',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+b.onclick=()=>t(true);x.onclick=s.onclick=()=>t(false);
+m.onclick=e=>{if(e.target.closest('a'))t(false)};
+document.querySelector('.sub').onsubmit=e=>{e.preventDefault();e.target.querySelector('button').textContent='SUBSCRIBED ✓';e.target.reset()};
+document.onkeydown=e=>{if(e.key==='Escape')t(false)};
+</script>
+</body>
+</html>
